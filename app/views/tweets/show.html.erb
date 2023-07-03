@@ -1,0 +1,19 @@
+<table class="table table-bordered ">
+  <thead class="thead-dark">
+    <tr>
+      <th>Tweet</th>
+      <th colspan="2">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @tweet.content %></td>
+      <td><%= link_to "Editar este tweet", edit_tweet_path(@tweet) %></td>
+      <td><%= link_to "Volver a tweets", tweets_path %></td>
+    </tr>
+    <tr>
+      <td colspan="3"><%= button_to "Eliminar este tweet", @tweet, method: :delete, class: "btn btn-danger" %></td>
+    </tr>
+  </tbody>
+</table>
+

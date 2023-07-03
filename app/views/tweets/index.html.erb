@@ -1,0 +1,30 @@
+
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Contenido</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tweets.each do |tweet| %>
+        <tr>
+          <td><%= tweet.username %></td>
+          <td><%= tweet.content %></td>
+          <td class="d-flex align-items-center justify-content-center bg-transparent">
+            <%= link_to "Ver tweet", tweet, class: "btn btn-primary btn-custom" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+
+
+<div class="d-flex justify-content-center mb-4">
+      <%= raw pagy_nav(@pagy) %>
+      </div>
+  
+</div>
+

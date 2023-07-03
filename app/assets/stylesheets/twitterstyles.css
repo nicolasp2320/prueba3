@@ -1,0 +1,21 @@
+
+  
+  th, td {
+    border: 1px solid rgb(149, 201, 203);
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #d35115;
+  }
+  
+  .btn-custom {
+    /* Estilos personalizados para el botón */
+    background-color: #43c4da;
+    color: #000000;
+    /* Otros estilos personalizados */
+  }
+
+
+

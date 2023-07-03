@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th colspan="2">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= render "form", tweet: @tweet %></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Mostrar tweet", @tweet %></td>
+      <td><%= link_to "Volver a tweets", tweets_path %></td>
+    </tr>
+  </tbody>
+</table>

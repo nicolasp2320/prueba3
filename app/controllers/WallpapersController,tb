@@ -1,0 +1,7 @@
+# app/controllers/wallpapers_controller.rb
+class WallpapersController < ApplicationController
+  def show
+    wallpaper_path = Rails.root.join('public', 'wallpaper.jpg')
+    send_file wallpaper_path, type: 'image/jpeg', disposition: 'inline'
+  end
+end
